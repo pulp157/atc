@@ -1,0 +1,116 @@
+
+{
+  "name": "Frankfurt am Main",
+  "level": "hard",
+  "radio": "Frankfurt",
+  "icao": "EDDF",
+  "iata": "FRA" ,
+  "ctr_radius": 80,
+  "position": ["N50d1m18.38", "E8d33m23.24"],
+  "wind": {
+    "angle": 310,
+    "speed": 5
+  },
+  "fixes": {
+    "FFM": ["N50d03m13", "E8d38m14"],
+    
+  },
+  "runways":[
+    {
+      "name":        ["07R", "25L"],
+      "name_offset": [[0, 0], [0, 0]],
+       "end":    [ ["N50d1m39.15", "E8d32m3.03"], ["N50d2m24.19", "E8d35m11.51"]],
+      "length":      3.9912,
+      "ils":         [true, true]
+    },
+    {
+      "name":        ["07L", "25R"],
+      "name_offset": [[0, 0], [0, 0]],
+       "end":    [ ["N50d2m13.39", "E8d29m49.48"], ["N50d2m44.97", "E8d32m1.38"]],
+      "length":      2.7842,
+      "ils":         [true, true]
+    },
+    {
+      "name":        ["07C", "25C"],
+      "name_offset": [[0, 0], [0, 0]],
+       "end":    [ ["N50d1m57.42", "E8d32m4.67"], ["N50d2m42.46", "E8d35m13.13"]],
+      "length":      3.9912,
+      "ils":         [true, true]
+    },
+    {
+      "name":        ["18", "36"],
+      "name_offset": [[0, 0], [0, 0]],
+       "end":    [ ["N50d2m3.11", "E8d31m33.35"], ["N49d59m54.3", "E8d31m33.9"]],
+      "length":      3.9751,
+      "ils":         [true, true]
+    }
+  ],
+  "departures": {
+    "airlines": [
+      ["ual", 11],
+      ["baw", 9],
+      ["ups", 2]
+    ],
+    "destinations": [
+      290, 180, 340
+    ],
+    "type": "random",
+    "offset": 0,
+    "frequency": 38
+  },
+  "arrivals": [
+    {
+      "radial":   60,
+      "heading":  170,
+      "speed":    250,
+      "airlines":  [
+        ["ual", 1],
+        ["baw", 1],
+        ["dal", 1],
+        ["aal", 1]
+      ],
+      "type": "wave",
+      "offset": 0,
+      "frequency": 12,
+      "altitude":  10000
+    },
+    {
+      "radial":   90,
+      "speed":    250,
+      "airlines":  [
+        ["ual", 2],
+        ["baw", 5],
+      ],
+      "type": "random",
+      "offset": 5,
+      "frequency": 6,
+      "altitude":  10000
+    },
+    {
+      "radial":   145,
+      "speed":    250,
+      "airlines":  [
+        ["ual", 4],
+        ["baw", 3],
+        ["dal", 2],
+        ["aca", 1]
+      ],
+      "type": "wave",
+      "offset": 3,
+      "frequency": 12,
+      "altitude":  10000
+    },
+    {
+      "radial":   315,
+      "speed":    250,
+      "airlines":  [
+        ["ual", 10],
+        ["baw", 10],
+        ["fastga", 1]
+      ],
+      "type": "random",
+      "frequency": 6,
+      "altitude":  10000
+    }
+  ]
+}
